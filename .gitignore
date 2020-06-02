@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Api.Movie/.vs/Api.Movie/v16
+/Api.Movie/Api.Movie/obj
+/Api.Movie/Api.Movie/bin/Debug/netcoreapp3.1
