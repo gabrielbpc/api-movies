@@ -1,7 +1,5 @@
 # api-movies
 
-Escreva uma API em .Net Core usando Visual Studio Community (https://visualstudio.microsoft.com/pt-br/vs/community/) ou Visual Studio Code (https://code.visualstudio.com/), da forma que achar mais adequada em termos de manutenção e simplicidade do código (ex: API pode ter apenas uma camada, mas procurando seguir o princípio de única responsabilidade - https://en.wikipedia.org/wiki/Single-responsibility_principle).
-
 Pra obtenção dos dados via HTTP GET deve ser utilizada a API abaixo :
 
 - URL: https://imdb8.p.rapidapi.com/title/get-videos
