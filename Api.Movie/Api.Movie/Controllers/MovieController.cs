@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Api.Movie.Interfaces;
+using Api.Movie.Model;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Movie.Controllers
 {
@@ -7,15 +9,19 @@ namespace Api.Movie.Controllers
     public class MovieController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get([FromServices] IMovieService service)
         {
-            return Ok();
+            var result = service.CreateJsonFileWithValues();
+
+            return Ok(result);
         }
 
         [HttpPost]
-        public IActionResult Post()
+        public IActionResult Post([FromServices] IMovieService service, [FromBody] VideoElement video)
         {
-            return Ok();
+            var result = service.UpdateJsonFileWithValue(video);
+
+            return Ok(result);
         }
     }
 }
